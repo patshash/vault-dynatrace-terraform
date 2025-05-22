@@ -19,6 +19,20 @@ A Terraform module for securely managing Dynatrace secrets and configurations.
   - [Configure Vault provider](https://registry.terraform.io/providers/hashicorp/vault/latest/docs)
 
 ## Usage
+- This demo depends on the following environment variables to be set in the environment or in config.
+- To make changes to dynatrace environment
+  - DYNATRACE_API_TOKEN
+  - DYNATRACE_ENV_URL
+
+- To change dynatrace users and user policy
+  - DT_ACCOUNT_ID
+  - DT_CLIENT_ID
+  - DT_CLIENT_SECRET
+
+- To interface with vault
+  - VAULT_ADDR
+  - VAULT_TOKEN
+  - VAULT_NAMESPACE
 
 1. **Initialize and apply:**
     ```bash
